@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Capsule App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Time Capsule App</h1>
+
+<section id="register-section">
+  <h2>Register</h2>
+  <input type="email" id="register-email" placeholder="Enter email" required>
+  <input type="password" id="register-password" placeholder="Enter password" required>
+  <button onclick="register()">Register</button>
+  <p id="register-message"></p>
+</section>
+
+<section id="login-section">
+  <h2>Login</h2>
+  <input type="email" id="login-email" placeholder="Enter email" required>
+  <input type="password" id="login-password" placeholder="Enter password" required>
+  <button onclick="login()">Login</button>
+  <p id="login-message"></p>
+</section>
+
+<section id="capsule-section" style="display:none;">
+  <h2>Create Time Capsule</h2>
+  <textarea id="capsule-message" placeholder="Enter your message"></textarea>
+  <button onclick="createCapsule()">Create Capsule</button>
+  <p id="capsule-message-status"></p>
+</section>
+
+<section id="view-capsules" style="display:none;">
+  <h2>View Capsules</h2>
+  <button onclick="readCapsules()">View My Capsules</button>
+  <div id="capsules-container"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
